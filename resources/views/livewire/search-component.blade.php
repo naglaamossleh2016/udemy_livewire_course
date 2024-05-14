@@ -22,5 +22,5 @@
             @endforeach
         </table>
     @endif
-
+    <div>{{ $posts->links() }}</div>
 </div>
