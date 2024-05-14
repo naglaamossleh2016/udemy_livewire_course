@@ -10,6 +10,10 @@ class SearchComponent extends Component
     public $search;
     use WithPagination;
     protected $paginationTheme='bootstrap';
+    public function paginationView()
+{
+    return 'vendor.livewire.custom-pagination';
+}
     protected $queryString=['search'=>['except'=>'','as'=>'s']];
       public function updatingSearch()
     {
