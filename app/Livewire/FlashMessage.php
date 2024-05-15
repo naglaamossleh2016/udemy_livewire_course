@@ -6,6 +6,12 @@ use Livewire\Component;
 
 class FlashMessage extends Component
 {
+    public function submit(){
+
+    }
+    public function remove(){
+        
+    }
     public function flash(){
         session()->flash('message','Value saved correctly');
         return redirect()->route('welcome2');
